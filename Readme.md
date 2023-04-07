@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ksenia Malyshkina](https://up.htmlacademy.ru/adaptive/28/user/2267549).
-* Наставник: `Евгений Петров`.
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
