@@ -13,140 +13,152 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__tooggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a>Главная</a>
+              <a>
+                Главная
+              </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a href="form.html">Подбор программы</a>
+              <a href="form.html">
+                Подбор программы
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-container main-inner">
-      <h1 class="main-inner__tittle">Подбор программы</h1>
-      <p class="main-inner__subtittle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="main-inner__tittle">
+        Подбор программы
+      </h1>
+      <p class="main-inner__subtittle">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
       <form class="main-inner__programs-form programs-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="programs-form__form-group form-group form-group--cat-information">
-          <legend class="visually-hidden">Данные кота.</legend>
-          <div class="form-group__wrapper">
-            <ul class="form-group__list form-group__wrapper">
-              <li class="form-group__item">
-                <label class="form-group__label" for="cat-name">Имя:*</label>
-                <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" id="cat-name" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="cat-weight">Вес (кг):*</label>
-                <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="cat-age">Возраст (лет):</label>
-                <input class="form-group__input input" type="number" name="cat-age" placeholder="7" id="cat-age">
-              </li>
-            </ul>
-          </div>
+          <legend class="visually-hidden">
+            Данные кота.
+          </legend>
+          <label class="form-group__label">
+            Имя:*
+            <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
+          </label>
+          <label class="form-group__label">
+            Вес (кг):*
+            <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
+          </label>
+          <label class="form-group__label">
+            Возраст (лет):
+            <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
+          </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--choice-program">
-          <legend class="visually-hidden">Выбор программы.</legend>
-          <div class="form-group__wrapper">
-            <ul class="form-group__list form-group__wrapper">
-              <li class="form-group__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="radio" name="program" value="loss" checked>
-                  <span class="form-tooggle__mark mark mark--radio"></span>
-                  <span class="form-tooggle__text">Похудение</span>
-                </label>
-              </li>
-              <li class="form-program__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="radio" name="program" value="gain">
-                  <span class="form-tooggle__mark mark mark--radio"></span>
-                  <span class="form-tooggle__text">Набор массы</span>
-                </label>
-              </li>
-              <li class="form-program__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="radio" name="program" value="advice">
-                  <span class="form-tooggle__mark mark mark--radio"></span>
-                  <span class="form-tooggle__text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+          <legend class="visually-hidden">
+            Выбор программы.
+          </legend>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="radio" name="program" value="loss" checked>
+            <span class="form-tooggle__mark mark mark--radio"></span>
+            <span class="form-tooggle__text">
+              Похудение
+            </span>
+          </label>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="radio" name="program" value="gain">
+            <span class="form-tooggle__mark mark mark--radio"></span>
+            <span class="form-tooggle__text">
+              Набор массы
+            </span>
+          </label>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="radio" name="program" value="advice">
+            <span class="form-tooggle__mark mark mark--radio"></span>
+            <span class="form-tooggle__text">
+              Не знаю (Нужен ваш совет)
+            </span>
+          </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--contacts-buyer">
-          <legend class="form-group__tittle">Контактные данные (владельца кота)</legend>
-          <div class="form-group__wrapper">
-            <ul class="form-group__list form-group__wrapper">
-              <li class="form-group__item">
-                <label class="form-group__label" for="email">E-mail:*</label>
-                <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="email" required>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="tel">Телефон:*</label>
-                <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="tel" required>
-              </li>
-            </ul>
-          </div>
+          <legend class="form-group__tittle">
+            Контактные данные (владельца кота)
+          </legend>
+          <label class="form-group__label">
+            E-mail:*
+            <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="form-group__label">
+            Телефон:*
+            <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--comment">
-          <legend class="form-group__tittle">Комментарий</legend>
-          <div class="form-group__wrapper">
-            <label class="visually-hidden" for="comment">Ваш комментарий.</label>
-            <textarea class="form-group__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
-          </div>
+          <legend class="form-group__tittle">
+            Комментарий
+          </legend>
+          <label class="visually-hidden">
+            Ваш комментарий.
+            <textarea class="form-group__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--additional">
-          <legend class="form-group__tittle">Дополнительно</legend>
-          <div class="form-group__wrapper">
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="checkbox" name="additional" value="sugar" checked>
-                  <span class="form-tooggle__mark mark mark--checkbox"></span>
-                  <span class="form-tooggle__text">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="checkbox" name="additional" value="water">
-                  <span class="form-tooggle__mark mark mark--checkbox"></span>
-                  <span class="form-tooggle__text">питьевая вода</span>
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="checkbox" name="additional" value="milk">
-                  <span class="form-tooggle__mark mark mark--checkbox"></span>
-                  <span class="form-tooggle__text">молоко</span>
-                </label>
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__field form-tooggle">
-                  <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
-                  <span class="form-tooggle__mark mark mark--checkbox"></span>
-                  <span class="form-tooggle__text">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </div>
+          <legend class="form-group__tittle">
+            Дополнительно
+          </legend>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="checkbox" name="additional" value="sugar" checked>
+            <span class="form-tooggle__mark mark mark--checkbox"></span>
+            <span class="form-tooggle__text">
+              сахарозаменитель
+            </span>
+          </label>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="checkbox" name="additional" value="water">
+            <span class="form-tooggle__mark mark mark--checkbox"></span>
+            <span class="form-tooggle__text">
+              питьевая вода
+            </span>
+          </label>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+            <span class="form-tooggle__mark mark mark--checkbox"></span>
+            <span class="form-tooggle__text">
+              молоко
+            </span>
+          </label>
+          <label class="form-group__field form-tooggle">
+            <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+            <span class="form-tooggle__mark mark mark--checkbox"></span>
+            <span class="form-tooggle__text">
+              витамины
+            </span>
+          </label>
         </fieldset>
-        <div class="form-group__wrapper">
-          <button class="programs-form__button button" type="button">отправить заявку</button>
-          <span class="programs-form__text">* — Обязательные поля</span>
-        </div>
+        <button class="programs-form__button button" type="submit">отправить заявку</button>
+        <span class="programs-form__text">
+          * — Обязательные поля
+        </span>
       </form>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты.</h2>
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <h2 class="visually-hidden">
+            Контакты.
+          </h2>
+          <p class="contacts__text">
+            приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__adress">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
         </div>
         <div class="map">
           <img src="img/map.png" width="320" height="362" alt="Карта.">
@@ -163,17 +175,23 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Вконтакте.</span>
+              <span class="visually-hidden">
+                Вконтакте.
+              </span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">Ютуб.</span>
+              <span class="visually-hidden">
+                Ютуб.
+              </span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="#">
-              <span class="visually-hidden">Телеграм.</span>
+              <span class="visually-hidden">
+                Телеграм.
+              </span>
             </a>
           </li>
         </ul>
