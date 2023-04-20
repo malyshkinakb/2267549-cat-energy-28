@@ -1,0 +1,21 @@
+.button {
+  background-color: $accent-color;
+  color: $light-text-color;
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+
+  &--color {
+    background-color: #F2F2F2;
+    color: #444444;
+  }
+}

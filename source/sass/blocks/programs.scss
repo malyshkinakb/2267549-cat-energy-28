@@ -1,0 +1,38 @@
+.programs {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.programs__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.programs__list{
+  @include list-reset;
+}
+
+.programs__item {
+  background-color: $secondary-background-color;
+  padding: 21px 33px 18px 20px;
+  margin-bottom: 20px;
+}
+
+.programs__tittle {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.programs__link {
+  @include subtitle;
+  line-height: 18px;
+  color: $dark-text-color;
+  text-decoration: none;
+}

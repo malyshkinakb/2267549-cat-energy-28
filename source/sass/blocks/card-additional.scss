@@ -1,0 +1,24 @@
+.card-additional {
+  display: grid;
+  grid-template-columns: 150px 130px;
+  padding: 13px 0;
+  border-top: 1px solid #CDCDCD;
+}
+
+.card-additional__tittle {
+  @include subtitle;
+  line-height: 16px;
+  grid-column: 1/3;
+  margin-bottom: 13px;
+}
+
+.card-additional__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.card-additional__button {
+  grid-column: 1/3;
+}
+
+

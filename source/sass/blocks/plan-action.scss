@@ -1,0 +1,22 @@
+.plan-action {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.plan-action__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.plan-action__title {
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.plan-action__list {
+  @include list-reset;
+}
+
+.plan-action__item {
+  margin-bottom: 20px;
+}

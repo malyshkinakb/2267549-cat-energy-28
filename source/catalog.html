@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo-link" href="index.html">
-        <img class="main-header__logo" src="img/logo-image.svg" width ="33" height="37" alt="Логотип Интеренет-магазина Кэт энерджи.">
-        <img class="main-header__logo-text logo" src="img/logo-text.svg" width="101" height="18" alt="Логотип Интеренет-магазина Кэт энерджи.">
+        <img class="main-header__logo" src="img/logo-image.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
+          <img class="main-header__logo-text logo" src="img/logo-text.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__tooggle" type="button">
@@ -18,17 +19,17 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>
+            <a  class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -36,289 +37,291 @@
       </nav>
     </header>
     <main class="main-container main-inner">
-      <h1 class="main-inner__tittle">
+      <h1 class="main-inner__tittle tittle">
         Каталог продукции
       </h1>
       <section class="catalog">
-        <h2 class="visually-hidden">
-          Основные товары
-        </h2>
-        <ul class="catalog__list">
-          <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/energy-chiken.png" width="68" height="86" alt="Корм со вкусом курицы 500 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy PRO 500 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    500 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Курица
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    700 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image card__image--size-big" src="img/catalog/energy-chiken.png" width="84" height="100" alt="Корм со вкусом курицы 1000 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy PRO 1000 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    1000 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Курица
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    1000 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/energy-fish.png" width="68" height="86" alt="Корм со вкусом рыбы 500 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy PRO 500 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    500 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Рыба
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    700 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image card__image--size-big" src="img/catalog/energy-fish.png" width="84" height="100" alt="Корм со вкусом рыбы 1000 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy PRO 1000 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">1000 г</td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Рыба
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    1000 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/energy-buckwheat.png" width="68" height="86" alt="Корм со вкусом гречи 500 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy slim 500 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    400 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Греча
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    400 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image card__image--size-big" src="img/catalog/energy-buckwheat.png" width="84" height="100" alt="Корм со вкусом гречи 1000 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy slim 1000 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    1000 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Греча
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    700 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/energy-rice.png" width="68" height="86" alt="Корм со вкусом риса 500 г.">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Cat Energy slim 500 г
-              </h3>
-              <table class="card__characteristics-table characteristics-table">
-                <tr class="characteristics-table__row">
-                  <td class="characteristics-table__options">
-                    Масса
-                  </td>
-                  <td class="characteristics-table__value">
-                    500 г
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Вкус
-                  </td>
-                  <td class="characteristics-table__value">
-                    Рис
-                  </td>
-                </tr>
-                <tr>
-                  <td class="characteristics-table__options">
-                    Цена
-                  </td>
-                  <td class="characteristics-table__value">
-                    500 ₽
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <button class="card__button button" type="button">
-              заказать
-            </button>
-          </li>
-          <li class="catalog__item card">
-            <div class="card__characteristics">
-              <h3 class="card__characteristics-tittle">
-                Показать еще 100500 товаров
-              </h3>
-              <p class="card__text">
-                На самом деле вкусов гораздо больше!
-              </p>
-            </div>
-            <button class="card__button button button--color" type="button">
-              показать все
-            </button>
-          </li>
-        </ul>
+        <div class="">
+          <h2 class="visually-hidden">
+            Основные товары
+          </h2>
+          <ul class="catalog__list">
+            <li class="catalog__item card">
+              <img class="card__image" src="img/catalog/energy-chiken.png" width="68" height="86" alt="Корм со вкусом курицы 500 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy PRO 500 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      500 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Курица
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      700 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image card__image--size-big" src="img/catalog/energy-chiken.png" width="84" height="100" alt="Корм со вкусом курицы 1000 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      1000 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Курица
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      1000 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="img/catalog/energy-fish.png" width="68" height="86" alt="Корм со вкусом рыбы 500 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy PRO 500 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      500 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Рыба
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      700 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image card__image--size-big" src="img/catalog/energy-fish.png" width="84" height="100" alt="Корм со вкусом рыбы 1000 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Рыба
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      1000 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="img/catalog/energy-buckwheat.png" width="68" height="86" alt="Корм со вкусом гречи 500 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy slim 500 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      400 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Греча
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      400 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image card__image--size-big" src="img/catalog/energy-buckwheat.png" width="84" height="100" alt="Корм со вкусом гречи 1000 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy slim 1000 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      1000 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Греча
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      700 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="img/catalog/energy-rice.png" width="68" height="86" alt="Корм со вкусом риса 500 г.">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Cat Energy slim 500 г
+                </h3>
+                <table class="card__characteristics-table characteristics-table">
+                  <tr class="characteristics-table__row">
+                    <td class="characteristics-table__options">
+                      Масса
+                    </td>
+                    <td class="characteristics-table__value">
+                      500 г
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Вкус
+                    </td>
+                    <td class="characteristics-table__value">
+                      Рис
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="characteristics-table__options">
+                      Цена
+                    </td>
+                    <td class="characteristics-table__value">
+                      500 ₽
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button" type="button">
+                заказать
+              </button>
+            </li>
+            <li class="catalog__item card card__show-more">
+              <div class="card__characteristics">
+                <h3 class="card__characteristics-tittle">
+                  Показать еще 100500 товаров
+                </h3>
+                <p class="card__text">
+                  На самом деле вкусов гораздо больше!
+                </p>
+              </div>
+              <button class="card__button button button--color" type="button">
+                показать все
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="catalog-additional">
         <div class="catalog-additional__wrapper">
-          <h2 class="catalog-additional__tittle">
+          <h2 class="catalog-additional__tittle tittle">
             Дополнительные товары
           </h2>
           <ul class="catalog-additional__list">

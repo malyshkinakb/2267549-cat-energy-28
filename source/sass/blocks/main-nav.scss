@@ -1,0 +1,25 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  padding: 22px 0 24px 0;
+  border-top: 1px solid #E6E6E6;
+  text-align: center;
+}
+
+.main-nav__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark-text-color;
+}
+
+.main-nav__link--active {
+  border-bottom: 2px solid $accent-color;
+}
+

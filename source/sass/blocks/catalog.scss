@@ -1,0 +1,10 @@
+.catalog__item {
+  margin: 0 auto;
+  border-top: 1px solid #CDCDCD;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  margin-bottom: 25px;
+}

@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo-link">
-          <img class="main-header__logo" src="img/logo-image.svg" width ="33" height="37" alt="Логотип Интеренет-магазина Кэт энерджи.">
-          <img class="main-header__logo-text logo" src="img/logo-text.svg" width="101" height="18" alt="Логотип Интеренет-магазина Кэт энерджи.">
+          <img class="main-header__logo" src="img/logo-image.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
+          <img class="main-header__logo-text logo" src="img/logo-text.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
         </a>
         <nav class="main-nav">
           <button class="main-nav__tooggle" type="button">
@@ -18,18 +19,18 @@
             </span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -49,7 +50,8 @@
           <p class="promo__slogan">
             Занялся собой? Займись котом!
           </p>
-          <a class="promo__link" href="form.html">
+          <img class="promo__image" src="./img/promo-image.png" alt="Корм с курицей">
+          <a class="promo__link button" href="form.html">
             подобрать программу
           </a>
         </div>
@@ -60,8 +62,8 @@
             Программы питания
           </h2>
           <ul class="programs__list">
-            <li class="programs-item programs-item--slim">
-              <h3 class="programs__tittle">
+            <li class="programs__item programs__item--slim">
+              <h3 class="programs__tittle tittle">
                 похудение
               </h3>
               <p class="programs__description">
@@ -72,8 +74,8 @@
                 каталог slim
               </a>
             </li>
-            <li class="programs-item programs-item--fat">
-              <h3 class="programs__tittle">
+            <li class="programs__item programsi__tem--fat">
+              <h3 class="programs__tittle tittle">
                 набор массы
               </h3>
               <p class="programs__description">
@@ -162,10 +164,10 @@
           <div class="example__slider slider">
             <ul class="slider__list">
               <li class="slider__item">
-                <img class="slider__image" src="img/slider/cat-fat.png" width="280" height="256" alt="Кот с лишним весом.">
+                <img class="slider__image" src="img/slider/cat-fat.png" alt="Кот с лишним весом.">
               </li>
               <li class="slider__item">
-                <img class="slider__image" src="img/slider/cat-thin.png" width="280" height="256" alt="Кот с недостатком массы.">
+                <img class="slider__image" src="img/slider/cat-thin.png" alt="Кот с недостатком массы.">
               </li>
             </ul>
             <div class="slider__buttons">
@@ -201,43 +203,45 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__logo">
-        <a class="main-footer__logo-link">
-          <img class="main-footer__logo-text logo logo--size-big" src="img/logo-text.svg" width="128" height="24" alt="Логотип Интеренет-магазина Кэт энерджи.">
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">
-                Вконтакте.
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">
-                Ютуб.
-              </span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <span class="visually-hidden">
-                Телеграм.
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__html-academy html-academy">
-        <a class="html-academy__link">
-          <span class="html-academy__text">
-            HTML Academy
-          </span>
-          <img class="html-academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип html-academy.">
-        </a>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="main-footer__logo-link">
+            <img class="main-footer__logo-text logo logo--size-big" src="img/logo-text.svg" width="128" height="24" alt="Логотип Интеренет-магазина Кэт энерджи.">
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">
+                  Вконтакте.
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">
+                  Ютуб.
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#">
+                <span class="visually-hidden">
+                  Телеграм.
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__html-academy html-academy">
+          <a class="html-academy__link" href="">
+            <span class="html-academy__text">
+              HTML Academy
+            </span>
+            <img class="html-academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип html-academy.">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
