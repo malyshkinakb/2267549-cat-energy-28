@@ -1,11 +1,22 @@
 .main-nav__list {
   @include list-reset;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
   padding: 22px 0 24px 0;
   border-top: 1px solid #E6E6E6;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .main-nav__link {
@@ -17,9 +28,26 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $dark-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .main-nav__link--active {
   border-bottom: 2px solid $accent-color;
+}
+
+.main-nav__tooggle {
+  width: 24px;
+  height: 16px;
+  border: none;
+  background-color: black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
