@@ -9,8 +9,8 @@
 }
 
 .card__image {
-  grid-column: 1 / 2;
- }
+  grid-column: 1/2;
+}
 
 .card__characteristics-tittle {
   @include subtitle;
