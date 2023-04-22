@@ -1,11 +1,16 @@
 .plan-action {
-  width: 320px;
+  min-width: 320px;
+  max-width: $desktop-width;
   margin: 0 auto;
-}
+  padding: 0 20px 0 20px;
 
-.plan-action__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 100px;
+  }
 }
 
 .plan-action__title {
@@ -15,8 +20,41 @@
 
 .plan-action__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+    padding-right: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .plan-action__item {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 25px 57px 0;
+    background-repeat: no-repeat;
+    background-position: right 40px;
+
+    &--icon-leaf {
+      background-image: url("../../img/number1.png");
+    }
+
+    &--icon-cup {
+      background-image: url("../../img/number2.png");
+    }
+
+    &--icon-eat {
+      background-image: url("../../img/number3.png");
+    }
+
+    &--icon-alarm {
+      background-image: url("../../img/number4.png");
+    }
+  }
 }
