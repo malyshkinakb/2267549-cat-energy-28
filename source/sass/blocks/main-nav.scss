@@ -29,15 +29,15 @@
   text-transform: uppercase;
   color: $dark-text-color;
 
+  &--active {
+    border-bottom: 2px solid $accent-color;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
-}
-
-.main-nav__link--active {
-  border-bottom: 2px solid $accent-color;
 }
 
 .main-nav__tooggle {
