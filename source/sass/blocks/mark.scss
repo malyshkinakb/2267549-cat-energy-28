@@ -1,0 +1,11 @@
+.mark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  &--checkbox {
+    border-radius: 0;
+  }
+}

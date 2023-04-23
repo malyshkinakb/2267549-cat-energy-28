@@ -1,0 +1,14 @@
+.form-tooggle {
+  display: flex;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-tooggle__text {
+  @include subtitle;
+  color: #222222;
+  margin-left: 15px;
+}

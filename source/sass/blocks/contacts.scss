@@ -1,0 +1,24 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.contacts__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__adress {
+  font-style: normal;
+  line-height: 20px;
+}

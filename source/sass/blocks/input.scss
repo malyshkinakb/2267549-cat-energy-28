@@ -1,0 +1,9 @@
+.input {
+  border: 1px solid #e7e7e7;
+  padding: 14px 20px 13px 20px;
+
+  &::placeholder {
+    @include subtitle;
+    color: $secondary-text-color;
+  }
+}

@@ -2,43 +2,43 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo" src="img/logo-image.svg" width ="33" height="37" alt="Логотип Интеренет-магазина Кэт энерджи.">
-          <img class="main-header__logo-text logo" src="img/logo-text.svg" width="101" height="18" alt="Логотип Интеренет-магазина Кэт энерджи.">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__tooggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo" src="img/logo-image.svg" width ="33" height="37" alt="Логотип Интеренет-магазина Кэт энерджи.">
+        <img class="main-header__logo-text logo" src="img/logo-text.svg" width="101" height="18" alt="Логотип Интеренет-магазина Кэт энерджи.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__tooggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container main-inner">
-      <h1 class="main-inner__tittle">
+      <h1 class="main-inner__tittle tittle">
         Подбор программы
       </h1>
       <p class="main-inner__subtittle">
@@ -89,7 +89,7 @@
           </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--contacts-buyer">
-          <legend class="form-group__tittle">
+          <legend class="form-group__tittle tittle">
             Контактные данные (владельца кота)
           </legend>
           <label class="form-group__label">
@@ -102,16 +102,16 @@
           </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--comment">
-          <legend class="form-group__tittle">
+          <legend class="form-group__tittle tittle">
             Комментарий
           </legend>
-          <label class="visually-hidden">
-            Ваш комментарий.
+          <label class="form-group__label">
+            <span class="visually-hidden">Ваш комментарий.</span>
             <textarea class="form-group__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--additional">
-          <legend class="form-group__tittle">
+          <legend class="form-group__tittle tittle">
             Дополнительно
           </legend>
           <label class="form-group__field form-tooggle">

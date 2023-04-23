@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// Базовые стили
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+//Добавляем миксины и переменные
+@import "./mixins.scss";
+@import "./variables.scss";
+
+//Блоки компонентов
+@import "./blocks/page.scss";
+@import "./blocks/tittle.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/button.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/plan-action.scss";
+@import "./blocks/example.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/html-academy.scss";
+
+//Каталог
+@import "./blocks/main-inner.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/characteristics-table.scss";
+@import "./blocks/present.scss";
+@import "./blocks/catalog-additional.scss";
+@import "./blocks/card-additional.scss";
+
+//Форма
+@import "./blocks/programs-form.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/input.scss";
+@import "./blocks/mark.scss";
+@import "./blocks/form-tooggle.scss";
