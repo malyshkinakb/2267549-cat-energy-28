@@ -1,11 +1,30 @@
-.catalog-additional__wrapper {
-  width: 280px;
+.catalog-additional {
+  min-width: 320px;
+  max-width: $desktop-width;
   margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 100px;
+  }
+}
+
+.catalog-additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 79px;
+  }
 }
 
 .catalog-additional__list {
   @include list-reset;
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .catalog-additional__tittle {

@@ -1,40 +1,85 @@
 .form-group {
   border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   &--choice-program {
     padding: 22px 0 19px 0;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   &--cat-information {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   &--contacts-buyer {
-    margin-top: 26px;
-    padding-bottom: 23px;
+    margin-bottom: 23px;
   }
 
   &--comment {
-    padding-bottom: 23px;
+    margin-bottom: 23px;
   }
 
   &--additional {
     padding-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+.form-group__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px;
+    border: 1px solid #d9d9d9;
   }
 }
 
 .form-group__label {
   @include subtitle;
-  display: grid;
+  display: flex;
   align-items: baseline;
   grid-template-columns: auto auto;
-  gap: 13px;
   width: 100%;
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-group__name {
+  flex-shrink: 0;
+  margin-right: 13px;
+}
+
+.form-group__input {
+  width: 100%;
 }
 
 .form-group__textarea {
@@ -56,5 +101,21 @@
   padding: 0;
   font-size: 24px;
   line-height: 26px;
+  position: relative;
   margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 2px;
+    width: 100vw;
+    top: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

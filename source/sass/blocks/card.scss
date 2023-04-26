@@ -1,7 +1,11 @@
 .card {
   display: grid;
-  grid-template-columns: 140px 140px;
-  padding: 19px 0;
+  grid-template-columns: 1fr 1fr;
+  padding: 19px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .card__show-more {

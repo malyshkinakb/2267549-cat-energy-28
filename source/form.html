@@ -45,59 +45,63 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="main-inner__programs-form programs-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="programs-form__form-group form-group form-group--cat-information">
-          <legend class="visually-hidden">
-            Данные кота.
-          </legend>
-          <label class="form-group__label">
-            Имя:*
-            <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
-          </label>
-          <label class="form-group__label">
-            Вес (кг):*
-            <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
-          </label>
-          <label class="form-group__label">
-            Возраст (лет):
-            <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="programs-form__form-group form-group form-group--choice-program">
-          <legend class="visually-hidden">
-            Выбор программы.
-          </legend>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="radio" name="program" value="loss" checked>
-            <span class="form-tooggle__mark mark mark--radio"></span>
-            <span class="form-tooggle__text">
-              Похудение
-            </span>
-          </label>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="radio" name="program" value="gain">
-            <span class="form-tooggle__mark mark mark--radio"></span>
-            <span class="form-tooggle__text">
-              Набор массы
-            </span>
-          </label>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="radio" name="program" value="advice">
-            <span class="form-tooggle__mark mark mark--radio"></span>
-            <span class="form-tooggle__text">
-              Не знаю (Нужен ваш совет)
-            </span>
-          </label>
-        </fieldset>
+        <div class="main-inner__form-wrapper">
+          <fieldset class="programs-form__form-group form-group form-group--cat-information">
+            <legend class="visually-hidden">
+              Данные кота.
+            </legend>
+            <label class="form-group__label">
+              <span class="form-group__name">Имя:*</span>
+              <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
+            </label>
+            <label class="form-group__label">
+              <span class="form-group__name">Вес (кг):*</span>
+              <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
+            </label>
+            <label class="form-group__label">
+              <span class="form-group__name">Возраст (лет):</span>
+              <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="programs-form__form-group form-group form-group--choice-program">
+            <div class="form-group__wrapper">
+              <legend class="visually-hidden">
+                Выбор программы.
+              </legend>
+              <label class="form-group__field form-tooggle">
+                <input class="visually-hidden" type="radio" name="program" value="loss" checked>
+                <span class="form-tooggle__mark mark mark--radio"></span>
+                <span class="form-tooggle__text">
+                  Похудение
+                </span>
+              </label>
+              <label class="form-group__field form-tooggle">
+                <input class="visually-hidden" type="radio" name="program" value="gain">
+                <span class="form-tooggle__mark mark mark--radio"></span>
+                <span class="form-tooggle__text">
+                  Набор массы
+                </span>
+              </label>
+              <label class="form-group__field form-tooggle">
+                <input class="visually-hidden" type="radio" name="program" value="advice">
+                <span class="form-tooggle__mark mark mark--radio"></span>
+                <span class="form-tooggle__text">
+                  Не знаю (Нужен ваш совет)
+                </span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="programs-form__form-group form-group form-group--contacts-buyer">
           <legend class="form-group__tittle tittle">
             Контактные данные (владельца кота)
           </legend>
           <label class="form-group__label">
-            E-mail:*
+            <span class="form-group__name">E-mail:*</span>
             <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form-group__label">
-            Телефон:*
+            <span class="form-group__name">Телефон:*</span>
             <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
@@ -143,26 +147,19 @@
             </span>
           </label>
         </fieldset>
-        <button class="programs-form__button button" type="submit">отправить заявку</button>
-        <span class="programs-form__text">
-          * — Обязательные поля
-        </span>
+        <div class="programs-form__button-form">
+          <button class="programs-form__button button" type="submit">отправить заявку</button>
+          <span class="programs-form__text">
+            * — Обязательные поля
+          </span>
+        </div>
       </form>
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">
-            Контакты.
-          </h2>
-          <p class="contacts__text">
-            приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
-        </div>
-        <div class="map">
-          <img src="img/map.png" width="320" height="362" alt="Карта.">
-        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472476494334!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682343629597!5m2!1sru!2sru"
+            allowfullscreen
+            title="Интеренет-магазин Кэт энерджи по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+          </div>
       </section>
     </main>
     <footer class="main-footer">

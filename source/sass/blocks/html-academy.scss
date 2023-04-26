@@ -1,5 +1,21 @@
 .html-academy__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
+  color: #444444;
+}
+
+.html-academy__text {
   font-size: 16px;
   line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
+  }
+}
+
+.html-academy__logo {
+  width: 27px;
+  height: 34px;
 }
