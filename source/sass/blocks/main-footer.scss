@@ -1,19 +1,25 @@
 .main-footer {
   min-width: 320px;
-  max-width: $desktop-width;
-  margin: 0 auto;
   padding: 40px 20px 40px 20px;
   background-color: $secondary-background-color;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px 55px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px 66px 100px;
+  }
+}
+
+.main-footer__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

@@ -1,22 +1,31 @@
 .example {
   min-width: 320px;
-  max-width: $desktop-width;
-  margin: 0 auto;
   padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 100px;
+    background: linear-gradient(to bottom, #ffffff 0 136px, #f2f2f2 136px 598px);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 366px 1fr;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 0 100px;
     grid-auto-flow: column;
     grid-template-columns: 436px 1fr;
-    background: linear-gradient(to bottom, #ffffff 0 136px, #f2f2f2 136px 598px);
   }
 }
 
