@@ -96,56 +96,62 @@
           <legend class="form-group__tittle tittle">
             Контактные данные (владельца кота)
           </legend>
-          <label class="form-group__label">
-            <span class="form-group__name">E-mail:*</span>
-            <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label class="form-group__label">
-            <span class="form-group__name">Телефон:*</span>
-            <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-          </label>
+          <div class="form-group__wrapper-label">
+            <label class="form-group__label">
+              <span class="form-group__name">E-mail:*</span>
+              <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="form-group__label">
+              <span class="form-group__name">Телефон:*</span>
+              <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--comment">
           <legend class="form-group__tittle tittle">
             Комментарий
           </legend>
-          <label class="form-group__label">
-            <span class="visually-hidden">Ваш комментарий.</span>
-            <textarea class="form-group__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
+          <div class="form-group__wrapper-label">
+            <label class="form-group__label">
+              <span class="visually-hidden">Ваш комментарий.</span>
+              <textarea class="form-group__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--additional">
           <legend class="form-group__tittle tittle">
             Дополнительно
           </legend>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="checkbox" name="additional" value="sugar" checked>
-            <span class="form-tooggle__mark mark mark--checkbox"></span>
-            <span class="form-tooggle__text">
-              сахарозаменитель
-            </span>
-          </label>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="checkbox" name="additional" value="water">
-            <span class="form-tooggle__mark mark mark--checkbox"></span>
-            <span class="form-tooggle__text">
-              питьевая вода
-            </span>
-          </label>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="checkbox" name="additional" value="milk">
-            <span class="form-tooggle__mark mark mark--checkbox"></span>
-            <span class="form-tooggle__text">
-              молоко
-            </span>
-          </label>
-          <label class="form-group__field form-tooggle">
-            <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
-            <span class="form-tooggle__mark mark mark--checkbox"></span>
-            <span class="form-tooggle__text">
-              витамины
-            </span>
-          </label>
+          <div class="form-group__wrapper-label">
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden" type="checkbox" name="additional" value="sugar" checked>
+              <span class="form-tooggle__mark mark mark--checkbox"></span>
+              <span class="form-tooggle__text">
+                сахарозаменитель
+              </span>
+            </label>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden" type="checkbox" name="additional" value="water">
+              <span class="form-tooggle__mark mark mark--checkbox"></span>
+              <span class="form-tooggle__text">
+                питьевая вода
+              </span>
+            </label>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+              <span class="form-tooggle__mark mark mark--checkbox"></span>
+              <span class="form-tooggle__text">
+                молоко
+              </span>
+            </label>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+              <span class="form-tooggle__mark mark mark--checkbox"></span>
+              <span class="form-tooggle__text">
+                витамины
+              </span>
+            </label>
+          </div>
         </fieldset>
         <div class="programs-form__button-form">
           <button class="programs-form__button button" type="submit">отправить заявку</button>

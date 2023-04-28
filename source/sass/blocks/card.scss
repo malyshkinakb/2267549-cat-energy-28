@@ -1,15 +1,17 @@
 .card {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   padding: 19px 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
 
-.card__show-more {
-  grid-template-columns: 280px;
+  &--show-more {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card__image {
