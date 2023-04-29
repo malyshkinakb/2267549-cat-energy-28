@@ -1,10 +1,36 @@
+.programs-form__button-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 20px 32px 20px;
+  row-gap: 21px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 64px;
+    padding: 0 70px 72px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 82px 110px;
+    column-gap: 84px;
+  }
+}
+
 .programs-form__button {
-  margin-bottom: 21px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .programs-form__text {
-  display: block;
-  margin: 0 auto;
-  color: $dark-text-color;
   text-align: center;
+  color: $dark-text-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+  }
 }

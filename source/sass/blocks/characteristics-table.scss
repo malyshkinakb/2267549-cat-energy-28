@@ -2,8 +2,23 @@
   width: 100%;
   font-size: 12px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .characteristics-table__value {
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    line-height: 30px;
+  }
+}
+
+.characteristics-table__options {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }

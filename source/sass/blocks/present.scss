@@ -1,14 +1,14 @@
-.present__wrapper {
-  width: 280px;
+.present {
   margin: 0 auto;
   background-image: url("../../img/background-present.png");
+  background-repeat: none;
+  background-size: cover;
   padding: 186px 0 43px 0;
 }
 
 .present__text {
   line-height: 18px;
   text-align: center;
-  width: 160px;
   color: $light-text-color;
   margin: 0 auto;
 }

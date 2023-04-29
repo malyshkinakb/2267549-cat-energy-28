@@ -1,3 +1,14 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  margin: 0 auto;
+}
+
+.social__link {
+  display: block;
+  background-color: #000000;
+  width: 28px;
+  height: 22px;
 }

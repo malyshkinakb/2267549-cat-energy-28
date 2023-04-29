@@ -1,8 +1,14 @@
 .slider__list {
   @include list-reset;
+  display: flex;
 }
 
 .slider__image {
   width: 280px;
   height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
