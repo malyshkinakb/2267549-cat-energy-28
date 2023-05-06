@@ -2,9 +2,11 @@
   background-color: $accent-color;
   color: $light-text-color;
   display: block;
+  width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,8 +15,49 @@
   cursor: pointer;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--form {
+    font-size: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      padding: 16px 0;
+    }
+  }
+
+  &--promo {
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      padding: 16px 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 0;
+    }
+  }
+
   &--color {
     background-color: #f2f2f2;
     color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }

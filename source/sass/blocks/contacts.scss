@@ -56,6 +56,15 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    width: 160px;
+    text-align: right;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }
 

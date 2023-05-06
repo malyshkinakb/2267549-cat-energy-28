@@ -2,15 +2,75 @@
   display: flex;
   margin-bottom: 13px;
   align-items: center;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+
+  &:hover {
+    cursor: pointer;
+
+    & .form-tooggle__mark {
+      border: 1px solid #bababa;
+    }
   }
 }
+
+.form-tooggle__input {
+  &:disabled + .form-tooggle__mark + .form-tooggle__text {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+.form-tooggle__mark {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  &--checkbox {
+    border-radius: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-tooggle__input:checked + .form-tooggle__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-tooggle__input[type="radio"]:checked + .form-tooggle__mark::before {
+  width: 13px;
+  height: 13px;
+  background-color: $accent-color;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form-tooggle__input[type="checkbox"]:checked + .form-tooggle__mark::before {
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
 
 .form-tooggle__text {
   @include subtitle;
