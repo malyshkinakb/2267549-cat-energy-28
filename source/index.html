@@ -9,8 +9,11 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo-link">
-        <img class="main-header__logo" src="img/logo-image.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
-        <img class="main-header__logo-text logo" src="img/logo-text.svg" alt="Логотип Интеренет-магазина Кэт энерджи.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202px" height="60px">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174px" height="51px">
+          <img class="main-header__logo" src="img/logo-phone.svg" width="191px" height="37px" alt="Логотип Интеренет-магазина Кэт энерджи.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__tooggle" type="button">
@@ -191,7 +194,7 @@
             приглашаем к сотрудничеству дилеров!
           </p>
           <address class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </address>
         </div>
         <div class="contacts__map">
