@@ -72,7 +72,7 @@
   &--slim::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
     width: 36px;
     height: 50px;
@@ -103,7 +103,7 @@
   &--fat::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-fat.svg");
+    background-image: url("../img/cat-fat.svg");
     background-repeat: no-repeat;
     width: 67px;
     height: 28px;

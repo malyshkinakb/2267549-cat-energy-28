@@ -70,19 +70,19 @@
   }
 
   &--icon-leaf::before {
-    background-image: url("../../img/icon-leaf.svg");
+    background-image: url("../img/icon-leaf.svg");
   }
 
   &--icon-cup::before {
-    background-image: url("../../img/icon-cup.svg");
+    background-image: url("../img/icon-cup.svg");
   }
 
   &--icon-eat::before {
-    background-image: url("../../img/icon-eat.svg");
+    background-image: url("../img/icon-eat.svg");
   }
 
   &--icon-alarm::before {
-    background-image: url("../../img/icon-alarm.svg");
+    background-image: url("../img/icon-alarm.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -94,19 +94,19 @@
     margin-bottom: 0;
 
     &--icon-leaf {
-      background-image: url("../../img/number1.png");
+      background-image: url("../img/number1.png");
     }
 
     &--icon-cup {
-      background-image: url("../../img/number2.png");
+      background-image: url("../img/number2.png");
     }
 
     &--icon-eat {
-      background-image: url("../../img/number3.png");
+      background-image: url("../img/number3.png");
     }
 
     &--icon-alarm {
-      background-image: url("../../img/number4.png");
+      background-image: url("../img/number4.png");
     }
   }
 }
