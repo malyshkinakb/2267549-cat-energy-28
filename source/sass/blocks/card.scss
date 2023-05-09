@@ -39,13 +39,19 @@
 
 .card__image {
   grid-column: 1/2;
-  width: 84px;
-  height: 100px;
   margin: 0 auto;
+  text-align: center;
+  display: block;
+
+  &--500g {
+    padding-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 28px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -62,10 +68,13 @@
   line-height: 20px;
   margin: 0;
   margin-bottom: 18px;
+  width: 76px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    width: 150px;
+    margin: auto;
   }
 
   &--show-more {
