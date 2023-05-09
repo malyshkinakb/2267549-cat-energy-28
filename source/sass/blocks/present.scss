@@ -1,19 +1,33 @@
 .present {
   margin: 0 auto;
-  background-image: url("../img/background-present.png");
+  background-image: url("../img/bg-present-phone.png");
   background-repeat: none;
   background-size: cover;
   padding: 59px 61px 43px 58px;
   margin-bottom: 35px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-present-phone@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-present-tablet.png");
     padding: 57px 124px 60px 77px;
     margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-present-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-present-desktop.png");
     padding: 56px 43px 42px 40px;
     margin-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-present-desktop@2x.png");
+    }
   }
 }
 
