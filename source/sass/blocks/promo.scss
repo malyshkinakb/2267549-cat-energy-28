@@ -45,6 +45,7 @@
 .promo__wrapper {
   min-width: 320px;
   padding: 27px 20px 20px 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 64px 30px 526px 30px;
@@ -108,32 +109,28 @@
 }
 
 .promo__image {
-  display: block;
   margin: 0 auto;
-  width: 280px;
-  height: 270px;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
     position: absolute;
-    display: block;
-    top: 201px;
+    top: 265px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     top: 0;
     left: 0;
     transform: none;
-    width: 552px;
-    height: 499px;
     grid-column: 2/3;
     grid-row: 1/4;
     margin-left: -27px;
+    width: 552px;
+    height: 499px;
   }
 }
 

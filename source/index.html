@@ -52,7 +52,11 @@
           <p class="promo__slogan">
             Занялся собой? Займись котом!
           </p>
-          <img class="promo__image" src="./img/promo-image.png" alt="Корм с курицей">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/img-promo-desktop.png, img/img-promo-desktop@2x.png 2x">
+            <source media="(min-width: 769px)" srcset="img/img-promo-tablet.png, img/img-promo-tablet@2x.png 2x">
+            <img class="promo__image" src="img/img-promo-phone.png" width="280px" height="270px" srcset="img/img-promo-phone@2x.png 2x" alt="Корм с курицей">
+          </picture>
           <a class="promo__link button button--promo" href="form.html">
             подобрать программу
           </a>
