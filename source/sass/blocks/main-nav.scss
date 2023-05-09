@@ -85,7 +85,7 @@
   }
 }
 
-.main-nav__tooggle {
+.main-nav__toggle {
   position: absolute;
   top: 24px;
   right: 20px;
@@ -105,7 +105,7 @@
   }
 }
 
-.main-nav--closed .main-nav__tooggle {
+.main-nav--closed .main-nav__toggle {
   padding: 0;
   width: 24px;
   height: 18px;
@@ -115,7 +115,7 @@
   background-image: url("../img/menu-closed.svg");
 }
 
-.main-nav--opened .main-nav__tooggle {
+.main-nav--opened .main-nav__toggle {
   background-image: url("../img/menu-opened.svg");
   width: 20px;
   height: 20px;
