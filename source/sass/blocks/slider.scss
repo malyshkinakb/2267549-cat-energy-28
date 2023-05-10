@@ -1,6 +1,7 @@
 .slider__list {
   @include list-reset;
-  display: flex;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .slider__image {

@@ -1,41 +1,18 @@
 .main-header {
-  display: flex;
-  align-items: center;
+  position: relative;
   min-width: 320px;
   padding: 10px 20px 17px 20px;
   margin: 0 auto;
   justify-content: space-between;
+  max-width: 1220px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 30px 0 30px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 110px 0 110px;
+    padding: 69px 110px 32px 110px;
   }
-}
-
-.main-header__logo-link {
-  display: flex;
-  width: 191px;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
-  }
-}
-
-.main-header__logo {
-  width: 33px;
-  height: 37px;
-}
-
-.main-header__logo-text {
-  width: 101px;
-  height: 18px;
 }

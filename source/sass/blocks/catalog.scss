@@ -1,14 +1,17 @@
 .catalog {
   min-width: 320px;
-  max-width: $desktop-width;
+  max-width: 1220px;
   margin: 0 auto;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 0 30px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 0 100px;
+    margin-bottom: 76px;
   }
 }
 

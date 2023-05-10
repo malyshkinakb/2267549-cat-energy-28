@@ -1,6 +1,6 @@
 .plan-action {
   min-width: 320px;
-  max-width: $desktop-width;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
 
@@ -16,6 +16,12 @@
 .plan-action__title {
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 71px;
+  }
 }
 
 .plan-action__description {
@@ -54,11 +60,29 @@
     width: 60px;
     height: 60px;
     background-color: $accent-color;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
     }
+  }
+
+  &--icon-leaf::before {
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--icon-cup::before {
+    background-image: url("../img/icon-cup.svg");
+  }
+
+  &--icon-eat::before {
+    background-image: url("../img/icon-eat.svg");
+  }
+
+  &--icon-alarm::before {
+    background-image: url("../img/icon-alarm.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -67,21 +91,22 @@
     background-position: right 0;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr;
+    margin-bottom: 0;
 
     &--icon-leaf {
-      background-image: url("../../img/number1.png");
+      background-image: url("../img/number1.png");
     }
 
     &--icon-cup {
-      background-image: url("../../img/number2.png");
+      background-image: url("../img/number2.png");
     }
 
     &--icon-eat {
-      background-image: url("../../img/number3.png");
+      background-image: url("../img/number3.png");
     }
 
     &--icon-alarm {
-      background-image: url("../../img/number4.png");
+      background-image: url("../img/number4.png");
     }
   }
 }

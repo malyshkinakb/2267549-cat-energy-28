@@ -1,11 +1,24 @@
 .main-nav__list {
   @include list-reset;
-  display: none;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  z-index: 2;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 440px;
     justify-content: space-between;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
   }
 }
 
@@ -16,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    padding: 0;
   }
 }
 
@@ -30,23 +44,98 @@
   color: $dark-text-color;
 
   &--active {
-    border-bottom: 2px solid $accent-color;
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        height: 2px;
+        background-color: $accent-color;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-color: $light-text-color;
+      }
+    }
   }
+
+  &:hover[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      color: $light-text-color;
+    }
+  }
 }
 
-.main-nav__tooggle {
-  width: 24px;
-  height: 16px;
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  padding: 0;
   border: none;
-  background-color: #000000;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  padding: 0;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url("../img/menu-closed.svg");
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/menu-opened.svg");
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle--opened {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
   }
 }

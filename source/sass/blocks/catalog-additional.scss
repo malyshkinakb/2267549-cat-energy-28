@@ -1,6 +1,6 @@
 .catalog-additional {
   min-width: 320px;
-  max-width: $desktop-width;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
 
@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 79px;
+    margin-bottom: 86px;
   }
 }
 
@@ -25,6 +26,10 @@
   @include list-reset;
   margin-bottom: 35px;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-additional__tittle {

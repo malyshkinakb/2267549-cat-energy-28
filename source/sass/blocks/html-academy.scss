@@ -4,6 +4,15 @@
   justify-content: space-between;
   text-decoration: none;
   color: #444444;
+  fill: #666666;
+
+  &:hover {
+    fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .html-academy__text {
@@ -13,9 +22,4 @@
   @media (min-width: $tablet-width) {
     margin-right: 27px;
   }
-}
-
-.html-academy__logo {
-  width: 27px;
-  height: 34px;
 }
