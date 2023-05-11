@@ -166,26 +166,25 @@
             </p>
           </div>
           <div class="example__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item">
-                <img class="slider__image" src="img/slider/cat-fat.png" alt="Кот с лишним весом.">
-              </li>
-              <!--<li class="slider__item">
-                <img class="slider__image" src="img/slider/cat-thin.png" alt="Кот с недостатком массы.">
-              </li>-->
-            </ul>
-            <!--<div class="slider__buttons">
-              <button class="slider__button slider__button--prev" type="button">
-                <span class="visually-hidden">
-                  Предыдущий слайд.
-                </span>
+            <div class="slider__list">
+              <div class="slider__item slider__item--fat">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="img/slider/cat-fat-tablet.png, img/slider/cat-fat-tablet@2x.png 2x" width="560", height="512">
+                  <img class="slider__image" src="img/slider/cat-fat.png" srcset="img/slider/cat-fat@2x.png" alt="Кот с лишним весом." width="280", height="256">
+                </picture>
+              </div>
+              <div class="slider__item slider__item--thin">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="img/slider/cat-thin-tablet.png, img/slider/cat-thin-tablet@2x.png 2x" width="560", height="512">
+                  <img class="slider__image" src="img/slider/cat-thin.png" srcset="img/slider/cat-thin@2x.png" alt="Кот с лишним весом." width="280", height="256">
+                </picture>
+              </div>
+            </div>
+            <div class="slider__control">
+              <button class="slider__button">
+                <span class="visually-hidden">Ползунок слайдера.</span>
               </button>
-              <button class="slider__button slider__button--next" type="button">
-                <span class="visually-hidden">
-                  Следующий слайд.
-                </span>
-              </button>
-            </div>-->
+            </div>
           </div>
         </div>
       </section>
