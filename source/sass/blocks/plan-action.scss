@@ -5,7 +5,7 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 71px;
+    margin-bottom: 32px;
   }
 }
 
@@ -46,6 +46,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 94px;
+    padding-right: 0;
   }
 }
 
@@ -87,12 +89,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 280px;
+    min-height: 240px;
     background-repeat: no-repeat;
     background-position: right 0;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr;
     margin-bottom: 0;
+    padding-top: 40px;
 
     &::after {
       font-family: "Oswald", "Arial", sans-serif;
@@ -102,7 +105,7 @@
       line-height: 280px;
       color: #f2f2f2;
       position: absolute;
-      top: -39px;
+      top: 0;
       right: 0;
       z-index: -1;
     }
