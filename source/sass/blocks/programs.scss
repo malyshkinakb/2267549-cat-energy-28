@@ -182,7 +182,7 @@
   &::after {
     content: "";
     mask: url("../img/sprite.svg#arrow-right");
-    background-color: #000000;
+    background: #000000;
     width: 24px;
     height: 12px;
     position: absolute;
