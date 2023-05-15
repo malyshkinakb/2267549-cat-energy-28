@@ -5,7 +5,7 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 71px;
+    margin-bottom: 32px;
   }
 }
 
@@ -46,6 +46,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 94px;
+    padding-right: 0;
   }
 }
 
@@ -53,6 +55,7 @@
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 5fr;
+  position: relative;
 
   &::before {
     content: "";
@@ -86,27 +89,41 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 280px;
+    min-height: 240px;
     background-repeat: no-repeat;
     background-position: right 0;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr;
     margin-bottom: 0;
+    padding-top: 40px;
 
-    &--icon-leaf {
-      background-image: url("../img/number1.png");
+    &::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
 
-    &--icon-cup {
-      background-image: url("../img/number2.png");
+    &--icon-leaf::after {
+      content: "1";
     }
 
-    &--icon-eat {
-      background-image: url("../img/number3.png");
+    &--icon-cup::after {
+      content: "2";
     }
 
-    &--icon-alarm {
-      background-image: url("../img/number4.png");
+    &--icon-eat::after {
+      content: "3";
+    }
+
+    &--icon-alarm::after {
+      content: "4";
     }
   }
 }
