@@ -2,6 +2,10 @@
   border: 1px solid #e7e7e7;
   padding: 14px 20px 14px 20px;
 
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
   &::placeholder {
     @include subtitle;
     color: $secondary-text-color;
@@ -20,3 +24,4 @@
     padding: 18px 20px 17px 20px;
   }
 }
+

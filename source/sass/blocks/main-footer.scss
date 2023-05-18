@@ -33,6 +33,17 @@
   }
 }
 
+.main-footer__logo-text {
+  width: 128px;
+  height: 24px;
+  fill: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 27px;
+  }
+}
+
 .main-footer__logo-link {
   width: 128px;
   height: 24px;
@@ -61,4 +72,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+
+.main-footer__logo-link[href] .main-footer__logo-text:hover {
+  fill: #3e3e3e;
+}
+
+.main-footer__logo-link[href] .main-footer__logo-text:active {
+  fill: #6b6b6b;
 }

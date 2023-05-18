@@ -178,25 +178,19 @@
   text-decoration: none;
   grid-column: 1/3;
   padding-top: 15px;
+  display: flex;
+  align-items: center;
 
-  &::after {
-    content: "";
-    mask: url("../img/sprite.svg#arrow-right");
-    background: #000000;
-    width: 24px;
-    height: 12px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 25px;
-    }
+  &:hover .programs__line {
+    transform: scaleX(1.2);
   }
 
-  &:hover::after {
-    width: 32px;
+  &:hover .programs__triangle {
+    transform: translateX(5px);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -210,3 +204,14 @@
     grid-column: 1/3;
   }
 }
+
+.programs__arrow {
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+}
+

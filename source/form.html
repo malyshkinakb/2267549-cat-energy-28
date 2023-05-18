@@ -104,11 +104,11 @@
             Контактные данные (владельца кота)
           </legend>
           <div class="form-group__wrapper-label form-group__wrapper-label--contacts-buyer">
-            <label class="form-group__label">
+            <label class="form-group__label form-group__label--email">
               <span class="form-group__name">E-mail:*</span>
               <input class="form-group__input input input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="form-group__label">
+            <label class="form-group__label form-group__label--phone form-group__label--error">
               <span class="form-group__name">Телефон:*</span>
               <input class="form-group__input input  input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </label>
@@ -187,7 +187,9 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link" href="index.html">
-            <img class="main-footer__logo-text" src="img/sprite.svg#logo-text" width="128" height="24" alt="Логотип Интеренет-магазина Кэт энерджи.">
+            <svg class="main-footer__logo-text">
+              <use href="img/sprite.svg#logo-text"></use>
+            </svg>
           </a>
           </div>
           <div class="main-footer__social social">
