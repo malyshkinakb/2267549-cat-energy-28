@@ -8,12 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px 66px 100px;
+    padding: 66px 110px 66px 110px;
   }
 }
 
 .main-footer__wrapper {
-  max-width: $desktop-width;
+  max-width: 1220px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

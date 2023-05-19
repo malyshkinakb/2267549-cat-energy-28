@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--inner">
       <a class="main-header__logo-link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/sprite.svg#logo-desktop" width="202px" height="60px">
@@ -45,12 +45,14 @@
       </nav>
     </header>
     <main class="main-container main-inner">
-      <h1 class="main-inner__tittle tittle">
-        Подбор программы
-      </h1>
-      <p class="main-inner__subtittle">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+      <div class="main-inner__wrapper">
+        <h1 class="main-inner__tittle tittle">
+          Подбор программы
+        </h1>
+        <p class="main-inner__subtittle">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
       <form class="main-inner__programs-form programs-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="main-inner__form-wrapper">
           <fieldset class="programs-form__form-group form-group form-group--cat-information">
@@ -169,12 +171,14 @@
       </form>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <p class="contacts__text">
-            приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
-          </address>
+          <div class="contacts__block">
+            <p class="contacts__text">
+              приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="contacts__adress">
+              ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472476494334!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682343629597!5m2!1sru!2sru"
