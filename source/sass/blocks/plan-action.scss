@@ -1,21 +1,22 @@
 .plan-action {
   min-width: 320px;
-  max-width: 1220px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 47px 30px;
+    padding: 0 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 0 100px;
+    padding: 0 110px 0 110px;
   }
 }
 
 .plan-action__title {
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -31,11 +32,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-top: 31px;
+    line-height: 24px;
   }
 }
 
 .plan-action__list {
   @include list-reset;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -56,6 +59,10 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -112,6 +119,7 @@
 
     &--icon-leaf::after {
       content: "1";
+      right: 21px;
     }
 
     &--icon-cup::after {

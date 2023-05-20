@@ -37,9 +37,13 @@
   color: #666666;
   background-color: currentColor;
   border-radius: 2px;
-  height: 100%;
+  height: 255px;
   z-index: 2;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 
   &:hover {
     color: $accent-color;
