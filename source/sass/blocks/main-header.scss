@@ -6,13 +6,24 @@
   justify-content: space-between;
   max-width: 1220px;
 
+  &--inner {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 10px 30px 0 30px;
+    padding: 5px 30px 0 30px;
     display: flex;
     align-items: center;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 69px 110px 32px 110px;
+  }
+}
+
+.main-header__logo-link {
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
   }
 }

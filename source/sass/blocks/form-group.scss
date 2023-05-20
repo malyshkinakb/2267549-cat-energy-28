@@ -77,6 +77,8 @@
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   &--contacts-buyer {
     @media (min-width: $desktop-width) {
@@ -106,6 +108,7 @@
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 110px;
+      padding-right: 110px;
     }
   }
 }
@@ -117,9 +120,32 @@
   grid-template-columns: auto auto;
   width: 100%;
   margin-bottom: 14px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    mask: url("../img/sprite.svg#email");
+    background-color: #000000;
+    width: 18px;
+    height: 14px;
+    top: 19px;
+    right: 20px;
+  }
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    mask: url("../img/sprite.svg#phone");
+    background-color: #000000;
+    width: 17px;
+    height: 17px;
+    top: 16px;
+    right: 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -131,6 +157,11 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
+}
+
+.form-group__label--email:active::after,
+.form-group__label--phone:active::after {
+  background-color: $accent-color;
 }
 
 .form-group__name {

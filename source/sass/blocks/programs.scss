@@ -53,12 +53,14 @@
     left: 0;
     width: 50px;
     height: 50px;
+    margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
       width: 200px;
-      height: 211px;
+      height: 200px;
       grid-row: span 3;
+      margin-top: 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -87,7 +89,7 @@
       grid-column: 2/3;
       grid-row: span 3;
       margin-left: 30px;
-      margin-bottom: 17px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -117,7 +119,7 @@
       grid-column: 2/3;
       grid-row: span 3;
       margin-left: -34px;
-      margin-bottom: 0;
+      margin-bottom: 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -142,6 +144,7 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,6 +164,7 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+    padding: 0;
     padding-right: 50px;
   }
 
@@ -178,25 +182,19 @@
   text-decoration: none;
   grid-column: 1/3;
   padding-top: 15px;
+  display: flex;
+  align-items: center;
 
-  &::after {
-    content: "";
-    mask: url("../img/sprite.svg#arrow-right");
-    background-color: #000000;
-    width: 24px;
-    height: 12px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 25px;
-    }
+  &:hover .programs__line {
+    transform: scaleX(1.2);
   }
 
-  &:hover::after {
-    width: 32px;
+  &:hover .programs__triangle {
+    transform: translateX(5px);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -208,5 +206,15 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/3;
+  }
+}
+
+.programs__arrow {
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
   }
 }

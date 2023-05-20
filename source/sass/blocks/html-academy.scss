@@ -4,10 +4,18 @@
   justify-content: space-between;
   text-decoration: none;
   color: #444444;
-  fill: #666666;
 
-  &:hover {
-    fill: $accent-color;
+  &::after {
+    content: "";
+    display: block;
+    mask: url("../img/sprite.svg#htmlacademy");
+    width: 27px;
+    height: 34px;
+    background: #666666;
+  }
+
+  &:hover::after {
+    background: $accent-color;
   }
 
   &:active {
@@ -20,6 +28,6 @@
   line-height: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 27px;
+    margin-right: 23px;
   }
 }

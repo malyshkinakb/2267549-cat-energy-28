@@ -9,11 +9,42 @@
 
 .social__link {
   display: block;
-  fill: #666666;
-
   text-align: center;
 
-  &:hover {
-    fill: $accent-color;
+  &:hover::before {
+    background: $accent-color;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+
+  &::before {
+    content: "";
+    display: block;
+    background: #666666;
+
+    &:hover {
+      background: $accent-color;
+    }
+  }
+
+  &--youtube::before {
+    mask: url("../img/sprite.svg#youtube");
+    width: 24px;
+    height: 20px;
+  }
+
+  &--telegram::before {
+    mask: url("../img/sprite.svg#telegram");
+    width: 19px;
+    height: 17px;
+  }
+
+  &--vk::before {
+    mask: url("../img/sprite.svg#vk");
+    width: 28px;
+    height: 17px;
   }
 }

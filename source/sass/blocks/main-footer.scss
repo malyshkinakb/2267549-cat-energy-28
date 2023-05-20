@@ -8,12 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px 66px 100px;
+    padding: 66px 110px 66px 110px;
   }
 }
 
 .main-footer__wrapper {
-  max-width: $desktop-width;
+  max-width: 1220px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +30,17 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     border-bottom: none;
+  }
+}
+
+.main-footer__logo-text {
+  width: 128px;
+  height: 24px;
+  fill: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 27px;
   }
 }
 
@@ -61,4 +72,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+
+.main-footer__logo-link[href] .main-footer__logo-text:hover {
+  fill: #3e3e3e;
+}
+
+.main-footer__logo-link[href] .main-footer__logo-text:active {
+  fill: #6b6b6b;
 }

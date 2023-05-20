@@ -4,6 +4,8 @@
   padding: 0 20px 32px 20px;
   row-gap: 21px;
   align-items: center;
+  max-width: 1220px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;

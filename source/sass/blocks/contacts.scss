@@ -1,11 +1,16 @@
 .contacts {
   min-width: 320px;
   margin: 0 auto;
-  position: relative;
   background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contacts__block {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px 26px 20px;
@@ -24,7 +29,7 @@
     padding: 56px 60px 56px 80px;
     position: absolute;
     z-index: 2;
-    left: 110px;
+    left: 0;
     top: 95px;
   }
 }
