@@ -72,10 +72,9 @@
 .form-tooggle__input[type="checkbox"]:checked + .form-tooggle__mark::before {
   width: 26px;
   height: 26px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/spite.svg#tick");
   background-repeat: no-repeat;
 }
-
 
 .form-tooggle__text {
   @include subtitle;

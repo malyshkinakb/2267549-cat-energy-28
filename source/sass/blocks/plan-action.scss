@@ -72,27 +72,29 @@
     background-color: $accent-color;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 25px 30px;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+      background-size: 32px 32px;
     }
   }
 
   &--icon-leaf::before {
-    background-image: url("../img/icon-leaf.svg");
+    background-image: url("../img/sprite.svg#icon-leaf");
   }
 
   &--icon-cup::before {
-    background-image: url("../img/icon-cup.svg");
+    background-image: url("../img/sprite.svg#icon-cup");
   }
 
   &--icon-eat::before {
-    background-image: url("../img/icon-eat.svg");
+    background-image: url("../img/sprite.svg#icon-eat");
   }
 
   &--icon-alarm::before {
-    background-image: url("../img/icon-alarm.svg");
+    background-image: url("../img/sprite.svg#icon-alarm");
   }
 
   @media (min-width: $tablet-width) {

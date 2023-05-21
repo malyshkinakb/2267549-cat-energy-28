@@ -211,11 +211,11 @@ img {
   border: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url("../img/menu-closed.svg");
+  background-image: url("../img/sprite.svg#menu-closed");
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../img/menu-opened.svg");
+  background-image: url("../img/sprite.svg#menu-opened");
   width: 20px;
   height: 20px;
 }
@@ -555,7 +555,7 @@ img {
 .programs__item--slim::after {
   content: "";
   position: absolute;
-  background-image: url("../img/cat-slim.svg");
+  background-image: url("../img/sprite.svg#cat-slim");
   background-repeat: no-repeat;
   width: 36px;
   height: 50px;
@@ -588,7 +588,7 @@ img {
 .programs__item--fat::after {
   content: "";
   position: absolute;
-  background-image: url("../img/cat-fat.svg");
+  background-image: url("../img/sprite.svg#cat-fat");
   background-repeat: no-repeat;
   width: 67px;
   height: 28px;
@@ -800,24 +800,26 @@ img {
   background-color: #68b738;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 25px 30px;
 }
 @media (min-width: 769px) {
   .plan-action__item::before {
     width: 80px;
     height: 80px;
+    background-size: 32px 32px;
   }
 }
 .plan-action__item--icon-leaf::before {
-  background-image: url("../img/icon-leaf.svg");
+  background-image: url("../img/sprite.svg#icon-leaf");
 }
 .plan-action__item--icon-cup::before {
-  background-image: url("../img/icon-cup.svg");
+  background-image: url("../img/sprite.svg#icon-cup");
 }
 .plan-action__item--icon-eat::before {
-  background-image: url("../img/icon-eat.svg");
+  background-image: url("../img/sprite.svg#icon-eat");
 }
 .plan-action__item--icon-alarm::before {
-  background-image: url("../img/icon-alarm.svg");
+  background-image: url("../img/sprite.svg#icon-alarm");
 }
 @media (min-width: 769px) {
   .plan-action__item {
@@ -1509,6 +1511,8 @@ img {
   padding: 27px 20px 0 20px;
   margin: 0 auto;
   margin-bottom: 37px;
+  max-width: 1440px;
+  box-sizing: border-box;
 }
 .main-inner__tittle--form {
   padding-left: 0;
@@ -1891,8 +1895,10 @@ img {
 }
 
 .catalog-additional__wrapper {
-  max-width: 1220px;
+  max-width: 1440px;
   padding: 0 20px 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 @media (min-width: 769px) {
   .catalog-additional__wrapper {
@@ -2331,6 +2337,11 @@ img {
   margin: 0 auto;
   position: relative;
 }
+@media (min-width: 769px) {
+  .form-group__wrapper-tittle {
+    position: static;
+  }
+}
 
 .form-group__tittle {
   padding: 0;
@@ -2495,7 +2506,7 @@ img {
 .form-tooggle__input[type=checkbox]:checked + .form-tooggle__mark::before {
   width: 26px;
   height: 26px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/spite.svg#tick");
   background-repeat: no-repeat;
 }
 
