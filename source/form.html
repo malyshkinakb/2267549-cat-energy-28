@@ -46,7 +46,7 @@
     </header>
     <main class="main-container main-inner">
       <div class="main-inner__wrapper">
-        <h1 class="main-inner__tittle tittle">
+        <h1 class="main-inner__tittle main-inner__tittle--form tittle">
           Подбор программы
         </h1>
         <p class="main-inner__subtittle">
@@ -56,21 +56,23 @@
       <form class="main-inner__programs-form programs-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="main-inner__form-wrapper">
           <fieldset class="programs-form__form-group form-group form-group--cat-information">
-            <legend class="visually-hidden">
-              Данные кота.
-            </legend>
-            <label class="form-group__label">
-              <span class="form-group__name">Имя:*</span>
-              <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
-            </label>
-            <label class="form-group__label">
-              <span class="form-group__name">Вес (кг):*</span>
-              <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
-            </label>
-            <label class="form-group__label">
-              <span class="form-group__name">Возраст (лет):</span>
-              <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
-            </label>
+            <div class="form-group__wrapper">
+              <legend class="visually-hidden">
+                Данные кота.
+              </legend>
+              <label class="form-group__label">
+                <span class="form-group__name">Имя:*</span>
+                <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
+              </label>
+              <label class="form-group__label">
+                <span class="form-group__name">Вес (кг):*</span>
+                <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
+              </label>
+              <label class="form-group__label">
+                <span class="form-group__name">Возраст (лет):</span>
+                <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="programs-form__form-group form-group form-group--choice-program">
             <div class="form-group__wrapper">
@@ -102,9 +104,11 @@
           </fieldset>
         </div>
         <fieldset class="programs-form__form-group form-group form-group--contacts-buyer">
-          <legend class="form-group__tittle tittle">
-            Контактные данные (владельца кота)
-          </legend>
+          <div class="form-group__wrapper-tittle">
+            <legend class="form-group__tittle form-group__tittle--contact tittle">
+              Контактные данные (владельца кота)
+            </legend>
+          </div>
           <div class="form-group__wrapper-label form-group__wrapper-label--contacts-buyer">
             <label class="form-group__label form-group__label--email">
               <span class="form-group__name">E-mail:*</span>
@@ -117,9 +121,11 @@
           </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--comment">
-          <legend class="form-group__tittle tittle">
-            Комментарий
-          </legend>
+          <div class="form-group__wrapper-tittle">
+            <legend class="form-group__tittle tittle">
+              Комментарий
+            </legend>
+          </div>
           <div class="form-group__wrapper-label">
             <label class="form-group__label">
               <span class="visually-hidden">Ваш комментарий.</span>
@@ -128,32 +134,34 @@
           </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--additional">
-          <legend class="form-group__tittle tittle">
-            Дополнительно
-          </legend>
+          <div class="form-group__wrapper-tittle">
+            <legend class="form-group__tittle form-group__tittle--additional tittle">
+              Дополнительно
+            </legend>
+          </div>
           <div class="form-group__wrapper-label form-group__wrapper-label--additional">
-            <label class="form-group__field form-tooggle">
+            <label class="form-group__field form-tooggle form-tooggle--checkbox">
               <input class="visually-hidden form-tooggle__input" type="checkbox" name="additional" value="sugar" checked>
               <span class="form-tooggle__mark form-tooggle__mark--checkbox"></span>
               <span class="form-tooggle__text">
                 сахарозаменитель
               </span>
             </label>
-            <label class="form-group__field form-tooggle">
+            <label class="form-group__field form-tooggle form-tooggle--checkbox">
               <input class="visually-hidden form-tooggle__input" type="checkbox" name="additional" value="water">
               <span class="form-tooggle__mark form-tooggle__mark--checkbox"></span>
               <span class="form-tooggle__text">
                 питьевая вода
               </span>
             </label>
-            <label class="form-group__field form-tooggle">
+            <label class="form-group__field form-tooggle form-tooggle--checkbox">
               <input class="visually-hidden form-tooggle__input" type="checkbox" name="additional" value="milk">
               <span class="form-tooggle__mark form-tooggle__mark--checkbox"></span>
               <span class="form-tooggle__text">
                 молоко
               </span>
             </label>
-            <label class="form-group__field form-tooggle">
+            <label class="form-group__field form-tooggle form-tooggle--checkbox">
               <input class="visually-hidden form-tooggle__input" type="checkbox" name="additional" value="vitamins">
               <span class="form-tooggle__mark form-tooggle__mark--checkbox"></span>
               <span class="form-tooggle__text">
@@ -169,7 +177,7 @@
           </span>
         </div>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--inner">
         <div class="contacts__wrapper">
           <div class="contacts__block">
             <p class="contacts__text">

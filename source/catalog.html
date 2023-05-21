@@ -97,7 +97,7 @@
             <picture>
               <source media="(min-width: 769px)" srcset="img/catalog/chiken-1000g-desktop.png, img/catalog/chiken-1000g-desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 769px)" srcset="img/catalog/chiken-1000g-tablet.png, img/catalog/chiken-1000g-tablet@2x.png 2x" width="168" height="200">
-              <img class="card__image card-image-1000g" src="img/catalog/chiken-1000g.png" alt="Корм со вкусом курицы 1000 г." srcset="img/catalog/chiken-1000g@2x.png 2x"  width="84" height="100">
+              <img class="card__image card__image--1000g" src="img/catalog/chiken-1000g.png" alt="Корм со вкусом курицы 1000 г." srcset="img/catalog/chiken-1000g@2x.png 2x"  width="84" height="100">
             </picture>
             <div class="card__characteristics">
               <h3 class="card__characteristics-tittle">
@@ -178,7 +178,7 @@
             <picture>
               <source media="(min-width: 769px)" srcset="img/catalog/fish-1000g-desktop.png, img/catalog/fish-1000g-desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 769px)" srcset="img/catalog/fish-1000g-tablet.png, img/catalog/fish-1000g-tablet@2x.png 2x" width="168" height="200">
-              <img class="card__image card-image-1000g" src="img/catalog/fish-1000g.png" alt="Корм со вкусом рыбы 1000 г." srcset="img/catalog/fish-1000g@2x.png 2x" width="84" height="100">
+              <img class="card__image card__image--1000g" src="img/catalog/fish-1000g.png" alt="Корм со вкусом рыбы 1000 г." srcset="img/catalog/fish-1000g@2x.png 2x" width="84" height="100">
             </picture>
             <div class="card__characteristics">
               <h3 class="card__characteristics-tittle">
@@ -257,7 +257,7 @@
             <picture>
               <source media="(min-width: 769px)" srcset="img/catalog/buckwheat-1000g-desktop.png, img/catalog/buckwheat-1000g-desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 769px)" srcset="img/catalog/buckwheat-1000g-tablet.png, img/catalog/buckwheat-1000g-tablet@2x.png 2x" width="168" height="200">
-              <img class="card__image card-image-1000g" src="img/catalog/buckwheat-1000g.png" alt="Корм со вкусом гречки 1000 г." srcset="img/catalog/buckwheat-1000g@2x.png 2x" width="84" height="100">
+              <img class="card__image card__image--1000g" src="img/catalog/buckwheat-1000g.png" alt="Корм со вкусом гречки 1000 г." srcset="img/catalog/buckwheat-1000g@2x.png 2x" width="84" height="100">
             </picture>
             <div class="card__characteristics">
               <h3 class="card__characteristics-tittle">
@@ -352,9 +352,11 @@
         </ul>
       </section>
       <section class="catalog-additional">
-        <h2 class="catalog-additional__tittle tittle">
-          Дополнительные товары
-        </h2>
+        <div class="catalog-additional__wrapper-tittle">
+          <h2 class="catalog-additional__tittle tittle">
+            Дополнительные товары
+          </h2>
+        </div>
         <div class="catalog-additional__wrapper">
           <ul class="catalog-additional__list">
             <li class="catalog-additional__item card-additional">
@@ -424,7 +426,7 @@
           </section>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--inner">
         <h2 class="visually-hidden">
           Контакты.
         </h2>
