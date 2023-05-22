@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
+    margin-top: 0;
   }
 }
 
@@ -113,11 +114,11 @@
   border: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url("../img/menu-closed.svg");
+  background-image: url("../img/sprite.svg#menu-closed");
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../img/menu-opened.svg");
+  background-image: url("../img/sprite.svg#menu-opened");
   width: 20px;
   height: 20px;
 }

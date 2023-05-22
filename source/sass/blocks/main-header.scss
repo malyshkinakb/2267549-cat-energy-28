@@ -1,10 +1,11 @@
 .main-header {
   position: relative;
   min-width: 320px;
-  padding: 10px 20px 17px 20px;
+  box-sizing: border-box;
+  padding: 8px 20px 17px 20px;
   margin: 0 auto;
   justify-content: space-between;
-  max-width: 1220px;
+  max-width: 1440px;
 
   &--inner {
     border-bottom: 1px solid #e7e7e7;
@@ -18,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 110px 32px 110px;
+    padding: 60px 110px 32px 110px;
   }
 }
 

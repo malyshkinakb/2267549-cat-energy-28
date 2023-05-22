@@ -1,7 +1,11 @@
 .contacts {
   min-width: 320px;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+
+  &--inner {
+    background-color: #f2f2f2;
+  }
 }
 
 .contacts__wrapper {
@@ -16,11 +20,11 @@
   padding: 26px 20px 26px 20px;
   margin: 0 auto;
   min-width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
     margin: 0 auto;
-    padding: 56px 0 56px 0;
+    padding: 60px 70px 59px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +51,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 171px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +69,11 @@
     font-size: 16px;
     width: 160px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 175px;
   }
 }
 

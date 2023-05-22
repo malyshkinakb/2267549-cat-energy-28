@@ -2,6 +2,7 @@
   min-width: 320px;
   padding: 40px 20px 40px 20px;
   background-color: $secondary-background-color;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px 55px 30px;
@@ -24,7 +25,7 @@
 }
 
 .main-footer__logo {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {

@@ -8,12 +8,17 @@
     margin-bottom: 0;
   }
 
-
   &:hover {
     cursor: pointer;
 
     & .form-tooggle__mark {
       border: 1px solid #bababa;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
     }
   }
 }
@@ -67,15 +72,14 @@
 .form-tooggle__input[type="checkbox"]:checked + .form-tooggle__mark::before {
   width: 26px;
   height: 26px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/spite.svg#tick");
   background-repeat: no-repeat;
 }
-
 
 .form-tooggle__text {
   @include subtitle;
   color: #222222;
-  margin-left: 15px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -5,8 +5,8 @@
   border-top: 1px solid #cdcdcd;
   align-items: center;
 
-  &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+  &:first-child {
+    border-top: none;
   }
 
   @media (min-width: $tablet-width) {
