@@ -58,11 +58,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 39px 110px 0 110px;
-    margin-bottom: 56px;
+    margin-bottom: 84px;
 
     &--form {
       padding-left: 0;
       padding-right: 0;
+      margin-bottom: 56px;
     }
   }
 }
