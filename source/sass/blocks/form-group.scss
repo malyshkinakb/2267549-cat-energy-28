@@ -1,6 +1,6 @@
 .form-group {
+  max-width: 1440px;
   border: none;
-  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -8,10 +8,12 @@
   }
 
   &--choice-program {
-    padding: 22px 0 19px 0;
+    padding: 23px 20px 19px 20px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 26px;
+    box-sizing: border-box;
+    min-width: 320px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 71px;
@@ -27,9 +29,13 @@
 
   &--cat-information {
     margin-bottom: 21px;
+    box-sizing: border-box;
+    min-width: 320px;
+    padding: 0 20px 0 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -40,6 +46,7 @@
 
   &--contacts-buyer,
   &--comment {
+    margin: 0 auto;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -57,8 +64,8 @@
     }
   }
 
-
   &--additional {
+    margin: 0 auto;
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
@@ -71,22 +78,10 @@
   }
 }
 
-.form-group__wrapper {
-  box-sizing: border-box;
-  min-width: 320px;
-  padding: 0 20px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
 .form-group__wrapper-label {
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1440px;
-  margin: 0 auto;
 
   &--contacts-buyer {
     @media (min-width: $desktop-width) {

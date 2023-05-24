@@ -9,20 +9,17 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff">
     <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff">
     <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font" type="font/woff">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--inner">
       <a class="main-header__logo-link" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/sprite.svg#logo-desktop" width="202px" height="60px">
-          <source media="(min-width: 768px)" srcset="img/sprite.svg#logo-tablet" width="174px" height="51px">
-          <img class="main-header__logo" src="img/sprite.svg#logo-phone" width="191px" height="37px" alt="Логотип Интеренет-магазина Кэт энерджи.">
+          <source media="(min-width: 1440px)" srcset="img/sprite.svg#logo-desktop" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/sprite.svg#logo-tablet" width="174" height="51">
+          <img class="main-header__logo" src="img/sprite.svg#logo-phone" width="191" height="37" alt="Логотип Интеренет-магазина Кэт энерджи.">
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
@@ -62,59 +59,53 @@
       <form class="main-inner__programs-form programs-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="main-inner__form-wrapper">
           <fieldset class="programs-form__form-group form-group form-group--cat-information">
-            <div class="form-group__wrapper">
-              <legend class="visually-hidden">
-                Данные кота.
-              </legend>
-              <label class="form-group__label">
-                <span class="form-group__name">Имя:*</span>
-                <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
-              </label>
-              <label class="form-group__label">
-                <span class="form-group__name">Вес (кг):*</span>
-                <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
-              </label>
-              <label class="form-group__label">
-                <span class="form-group__name">Возраст (лет):</span>
-                <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
-              </label>
-            </div>
+            <legend class="visually-hidden">
+              Данные кота.
+            </legend>
+            <label class="form-group__label">
+              <span class="form-group__name">Имя:*</span>
+              <input class="form-group__input input" type="text" name="cat-name" placeholder="барсик" required>
+            </label>
+            <label class="form-group__label">
+              <span class="form-group__name">Вес (кг):*</span>
+              <input class="form-group__input input" type="number" name="cat-weight" placeholder="7" required>
+            </label>
+            <label class="form-group__label">
+              <span class="form-group__name">Возраст (лет):</span>
+              <input class="form-group__input input" type="number" name="cat-age" placeholder="7">
+            </label>
           </fieldset>
           <fieldset class="programs-form__form-group form-group form-group--choice-program">
-            <div class="form-group__wrapper">
-              <legend class="visually-hidden">
-                Выбор программы.
-              </legend>
-              <label class="form-group__field form-tooggle">
-                <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="loss" checked>
-                <span class="form-tooggle__mark mark mark--radio"></span>
-                <span class="form-tooggle__text">
-                  Похудение
-                </span>
-              </label>
-              <label class="form-group__field form-tooggle">
-                <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="gain">
-                <span class="form-tooggle__mark mark mark--radio"></span>
-                <span class="form-tooggle__text">
-                  Набор массы
-                </span>
-              </label>
-              <label class="form-group__field form-tooggle">
-                <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="advice">
-                <span class="form-tooggle__mark mark mark--radio"></span>
-                <span class="form-tooggle__text">
-                  Не знаю (Нужен ваш совет)
-                </span>
-              </label>
-            </div>
+            <legend class="visually-hidden">
+              Выбор программы.
+            </legend>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="loss" checked>
+              <span class="form-tooggle__mark mark mark--radio"></span>
+              <span class="form-tooggle__text">
+                Похудение
+              </span>
+            </label>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="gain">
+              <span class="form-tooggle__mark mark mark--radio"></span>
+              <span class="form-tooggle__text">
+                Набор массы
+              </span>
+            </label>
+            <label class="form-group__field form-tooggle">
+              <input class="visually-hidden form-tooggle__input" type="radio" name="program" value="advice">
+              <span class="form-tooggle__mark mark mark--radio"></span>
+              <span class="form-tooggle__text">
+                Не знаю (Нужен ваш совет)
+              </span>
+            </label>
           </fieldset>
         </div>
         <fieldset class="programs-form__form-group form-group form-group--contacts-buyer">
-          <div class="form-group__wrapper-tittle">
-            <legend class="form-group__tittle form-group__tittle--contact tittle">
-              Контактные данные (владельца кота)
-            </legend>
-          </div>
+          <legend class="form-group__tittle form-group__tittle--contact tittle">
+            Контактные данные (владельца кота)
+          </legend>
           <div class="form-group__wrapper-label form-group__wrapper-label--contacts-buyer">
             <label class="form-group__label form-group__label--email">
               <span class="form-group__name">E-mail:*</span>
@@ -127,11 +118,9 @@
           </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--comment">
-          <div class="form-group__wrapper-tittle">
-            <legend class="form-group__tittle tittle">
-              Комментарий
-            </legend>
-          </div>
+          <legend class="form-group__tittle tittle">
+            Комментарий
+          </legend>
           <div class="form-group__wrapper-label">
             <label class="form-group__label">
               <span class="visually-hidden">Ваш комментарий.</span>
@@ -140,11 +129,9 @@
           </div>
         </fieldset>
         <fieldset class="programs-form__form-group form-group form-group--additional">
-          <div class="form-group__wrapper-tittle">
-            <legend class="form-group__tittle form-group__tittle--additional tittle">
-              Дополнительно
-            </legend>
-          </div>
+          <legend class="form-group__tittle form-group__tittle--additional tittle">
+            Дополнительно
+          </legend>
           <div class="form-group__wrapper-label form-group__wrapper-label--additional">
             <label class="form-group__field form-tooggle form-tooggle--checkbox">
               <input class="visually-hidden form-tooggle__input" type="checkbox" name="additional" value="sugar" checked>
@@ -184,6 +171,9 @@
         </div>
       </form>
       <section class="contacts contacts--inner">
+        <h2 class="visually-hidden">
+          Контакты.
+        </h2>
         <div class="contacts__wrapper">
           <div class="contacts__block">
             <p class="contacts__text">
