@@ -25,7 +25,7 @@
 }
 
 .main-nav__item {
-  padding: 22px 0 24px 0;
+  padding: 22px 0 21px 0;
   border-top: 1px solid #e6e6e6;
   text-align: center;
 
@@ -55,10 +55,20 @@
         height: 2px;
         background-color: $accent-color;
       }
+    }
+  }
 
+  &--index-active {
+    &::after {
       @media (min-width: $desktop-width) {
         background-color: $light-text-color;
       }
+    }
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $light-text-color;
     }
   }
 
@@ -70,6 +80,10 @@
     opacity: 0.3;
   }
 
+  &:focus[href] {
+    outline: 2px solid #444444;
+    outline-offset: 2px;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -80,12 +94,9 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-
-    &--index {
-      color: $light-text-color;
-    }
   }
 }
+
 
 .main-nav__toggle {
   position: absolute;

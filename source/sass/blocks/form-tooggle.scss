@@ -30,6 +30,23 @@
   }
 }
 
+.form-tooggle:focus-within .form-tooggle__mark::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  outline: 2px solid #444444;
+  outline-offset: 2px;
+}
+
+.form-tooggle:focus-within .form-tooggle__mark--checkbox::after {
+  border-radius: 0;
+}
+
 .form-tooggle__mark {
   position: relative;
   display: block;
@@ -72,7 +89,7 @@
 .form-tooggle__input[type="checkbox"]:checked + .form-tooggle__mark::before {
   width: 26px;
   height: 26px;
-  background-image: url("../img/spite.svg#tick");
+  background-image: url("../img/sprite.svg#tick");
   background-repeat: no-repeat;
 }
 

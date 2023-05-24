@@ -1,6 +1,6 @@
 .form-group {
+  max-width: 1440px;
   border: none;
-  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -8,10 +8,12 @@
   }
 
   &--choice-program {
-    padding: 22px 0 19px 0;
+    padding: 23px 20px 19px 20px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 26px;
+    box-sizing: border-box;
+    min-width: 320px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 71px;
@@ -27,9 +29,13 @@
 
   &--cat-information {
     margin-bottom: 21px;
+    box-sizing: border-box;
+    min-width: 320px;
+    padding: 0 20px 0 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -40,6 +46,8 @@
 
   &--contacts-buyer,
   &--comment {
+    max-width: 1440px;
+    margin: 0 auto;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -57,8 +65,9 @@
     }
   }
 
-
   &--additional {
+    max-width: 1440px;
+    margin: 0 auto;
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
@@ -71,22 +80,10 @@
   }
 }
 
-.form-group__wrapper {
-  box-sizing: border-box;
-  min-width: 320px;
-  padding: 0 20px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
 .form-group__wrapper-label {
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1440px;
-  margin: 0 auto;
 
   &--contacts-buyer {
     @media (min-width: $desktop-width) {
@@ -137,7 +134,7 @@
   &--email::after {
     content: "";
     position: absolute;
-    mask: url("../img/sprite.svg#email");
+    mask: url("../img/sprite.svg#icon-email");
     background-color: #000000;
     width: 18px;
     height: 14px;
@@ -148,7 +145,7 @@
   &--phone::after {
     content: "";
     position: absolute;
-    mask: url("../img/sprite.svg#phone");
+    mask: url("../img/sprite.svg#icon-phone");
     background-color: #000000;
     width: 17px;
     height: 17px;
@@ -212,18 +209,13 @@
 .form-group__wrapper-tittle {
   max-width: 1440px;
   margin: 0 auto;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-  }
 }
 
 .form-group__tittle {
+  position: relative;
   padding: 0;
   font-size: 24px;
   line-height: 26px;
-  position: static;
   margin-bottom: 35px;
   padding-left: 20px;
   background-color: #ffffff;
@@ -241,12 +233,13 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: #68b738;
+    background-color: $accent-color;
+    right: 0;
     height: 2px;
-    width: 100%;
+    width: 100vw;
     top: 16px;
-    left: 0;
     z-index: -2;
+    box-shadow: 100vw 0 0 0 $accent-color;
 
     @media (min-width: $tablet-width) {
       top: 19px;
