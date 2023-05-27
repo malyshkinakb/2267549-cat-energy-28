@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $light-text-color;
+    background-color: #ffffff;
     width: 565px;
     padding: 56px 60px 56px 80px;
     position: absolute;
@@ -93,4 +93,17 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.contacts__map {
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.contacts__map-static {
+  position: absolute;
+  top: 0;
+  object-fit: contain;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -77,7 +77,7 @@
 .form-tooggle__input[type="radio"]:checked + .form-tooggle__mark::before {
   width: 13px;
   height: 13px;
-  background-color: $accent-color;
+  background-color: #68b738;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {

@@ -46,16 +46,16 @@
   }
 
   &:hover {
-    color: $accent-color;
+    color: #68b738;
   }
 
   &:hover .slider__button {
-    border-color: $accent-color;
+    border-color: #68b738;
   }
 
   &:hover .slider__button::after,
   &:hover .slider__button::before {
-    border-right-color: $accent-color;
+    border-right-color: #68b738;
   }
 
   &:active {

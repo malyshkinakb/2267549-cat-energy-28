@@ -57,13 +57,13 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: $accent-color;
+    background-color: #68b738;
     right: 0;
     height: 2px;
     width: 100vw;
     top: 16px;
     z-index: -2;
-    box-shadow: 100vw 0 0 0 $accent-color;
+    box-shadow: 100vw 0 0 0 #68b738;
 
     @media (min-width: $tablet-width) {
       top: 19px;

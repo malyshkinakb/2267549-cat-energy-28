@@ -166,7 +166,7 @@
 
 .form-group__label--email:active::after,
 .form-group__label--phone:active::after {
-  background-color: $accent-color;
+  background-color: #68b738;
 }
 
 .form-group__name {
@@ -198,7 +198,7 @@
 
 .form-group__textarea::placeholder {
   @include subtitle;
-  color: $secondary-text-color;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -233,13 +233,13 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: $accent-color;
+    background-color: #68b738;
     right: 0;
     height: 2px;
     width: 100vw;
     top: 16px;
     z-index: -2;
-    box-shadow: 100vw 0 0 0 $accent-color;
+    box-shadow: 100vw 0 0 0 #68b738;
 
     @media (min-width: $tablet-width) {
       top: 19px;

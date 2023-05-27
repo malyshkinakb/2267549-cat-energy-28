@@ -43,7 +43,7 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: $dark-text-color;
+  color: #000000;
 
   &--active {
     &::after {
@@ -53,7 +53,7 @@
         margin-top: 10px;
         width: 100%;
         height: 2px;
-        background-color: $accent-color;
+        background-color: #68b738;
       }
     }
   }
@@ -61,14 +61,14 @@
   &--index-active {
     &::after {
       @media (min-width: $desktop-width) {
-        background-color: $light-text-color;
+        background-color: #ffffff;
       }
     }
   }
 
   &--index {
     @media (min-width: $desktop-width) {
-      color: $light-text-color;
+      color: #ffffff;
     }
   }
 
@@ -135,6 +135,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav--closed .main-nav__list {
     display: none;
   }
